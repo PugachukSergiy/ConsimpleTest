@@ -1,0 +1,20 @@
+CREATE TABLE [dbo].[Article] (
+    [Id]   INT            NOT NULL,
+    [Name] NVARCHAR (MAX) NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
+CREATE TABLE [dbo].[Purchase] (
+    [Id]   INT      IDENTITY (1, 1) NOT NULL,
+    [Date] DATETIME NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
+CREATE TABLE [dbo].[Product] (
+    [ArticleId]  INT        NOT NULL,
+    [PurchaseId] INT        NOT NULL,
+    [Number]     INT        NOT NULL,
+    [Cost]       FLOAT (53) NOT NULL,
+    FOREIGN KEY ([ArticleId]) REFERENCES [dbo].[Article] ([Id]),
+    FOREIGN KEY ([PurchaseId]) REFERENCES [dbo].[Purchase] ([Id])
+);
