@@ -1,0 +1,58 @@
+﻿.MainTable td{
+    border:2px solid black;
+    text-align:center;
+}
+
+#Articles {
+    height: 400px;
+    overflow-y: scroll;
+    border: 2px solid black;
+}
+
+.Article button {
+    width: 280px;
+    height: 40px;
+    margin: 5px;
+    padding: 5px;
+    text-align: left;
+}
+
+#ProductList {
+    height: 350px;
+    overflow-wrap:break-word;
+    overflow-y: scroll;
+    border: 2px solid black;
+    text-align:left;
+}
+
+#CommonCost {
+    height: 40px;
+    padding: 2px;
+    margin: 2px;
+    border: 1px solid black;
+}
+
+#CommonCost input{
+    text-align:right;
+}
+
+
+#NewProductForm {
+    height: 100px;
+    margin: 5px;
+    border: 2px solid black;
+}
+
+.MakePurchase {
+    width: 280px;
+    height: 40px;
+}
+
+#Result {
+    width: 300px;
+    height: 400px;
+    overflow-wrap: break-word;
+    overflow-y: scroll;
+    border: 2px solid black;
+    text-align: left;
+}

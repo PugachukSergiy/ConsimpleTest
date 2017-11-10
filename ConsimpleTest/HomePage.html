@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link type="text/css" href="HomePageSt.css" rel="stylesheet"/>
+    <title></title>
+</head>
+<body>
+    <script src="Scripts/jquery-3.2.1.js" type="text/javascript"></script>
+    <div>
+        <table class="MainTable">
+            <tr>
+                <td>Товары</td>
+                <td>Корзина</td>
+                <td>Отчет</td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="Articles"></div>
+                </td>
+                <td>
+                    <div id="ProductList"></div>
+                    <div id="CommonCost">
+                        Сумма к оплате: <input id="TotalCost" readonly value="">
+                    </div>
+                </td>
+                <td>
+                    <div id="Result"></div>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <div id="NewProductForm">
+                        <input id="NewProductId" type="number" value="" hidden>
+                        <label id="NewProductName"></label><br>
+                        Количество:<input id="NewProductNumber" type="number" step="1" value=""><br>
+                        Стоимость:<input id="NewProductCost" type="number" value=""><br>
+                        <button onclick="AddProduct()">Добавить</button>
+                        <button onclick="CancleProduct()">Отмена</button>
+                    </div>
+                    <button class="MakePurchase" onclick="MakePurchase()">Сфоррмировать чек</button>
+                </td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    <script src="Scripts/HomePageBehaviorScript.js" type="text/javascript"></script>
+</body>
+</html>
